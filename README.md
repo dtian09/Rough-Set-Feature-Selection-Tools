@@ -1,5 +1,6 @@
 # Rough-Set-Feature-Selection-Tools
-Rough set feature selection (RSFS) algorithms implemented in java. RSFS can be used to remove the irrelevant and redundant features from a training set before training machine learning classifiers such as neural networks and Bayesian network to improve the classification performance of the classifiers.
+Rough set feature selection (RSFS) algorithms implemented in java. RSFS can be used to remove the irrelevant and redundant features from a training set before training machine learning classifiers such as neural networks and Bayesian network to improve the classification performance of the classifiers. RSFS works on discrete features only. To apply RSFS on continuous features, the continuous features must be discretized before running RSFS. Two popular discretization algorithms are the Entropy-based discretization method and the Chimerge discretization. The entroy-based discretization is available in the weka machine learning tool (https://www.cs.waikato.ac.nz/ml/weka/). A java implementation of Chimerge is available under this repository.
+
 The following RSFS algorithms are implemented: 
   genetic algorithm (GA_Reducts.java),
   QuickReduct (QuickReduct.java),
@@ -18,5 +19,7 @@ D. Tian “A Multi-objective Genetic Local Search Algorithm for Optimal Feature 
 
 D. Tian, X. Zeng and J. Keane, “Core-generating Approximate Minimum Entropy Discretization for Rough Set Feature Selection in Pattern Classification” International Journal of Approximate Reasoning, vol. 52, issue 6, pp.863-880, 2011
 
-D. Tian, J. Keane and X. Zeng, ``Evaluating The Effect of Rough Set Feature Selection On The Performance of Decision Trees'', Proc. IEEE International Conference on Granular Computing, Georgia State University, Atlanta, USA, 2006
+D. Tian, J. Keane and X. Zeng, "Evaluating The Effect of Rough Set Feature Selection On The Performance of Decision Trees", Proc. IEEE International Conference on Granular Computing, Georgia State University, Atlanta, USA, 2006
+
+D. Tian, "Effective Rough Set Feature Selection via Core-generating Approximate Minimum Entropy Discretization", PhD Thesis, The University of Manchester, 2009
 
