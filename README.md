@@ -9,7 +9,7 @@ The following RSFS algorithms are implemented:
   a multi-object genetic local search (Hybrid_NSGAII.java),
   computation of degree of dependency (Gamma_and_Relative_Dependency.java) and
   computation of relative dependency  (Gamma_and_Relative_Dependency.java).
-The genetic algorithm and the multi-objectve genetic local search calls the Weka machine learning tool (weka.jar version 3.6) to train classifiers and evaluate their performance on test sets.
+The genetic algorithm and the multi-objectve genetic local search calls the jmetal optimization library and the Weka machine learning tool (weka.jar version 3.6) to train classifiers and evaluate their performance on test sets.
 
 References:
 
