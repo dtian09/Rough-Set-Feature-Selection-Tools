@@ -1,0 +1,10 @@
+//Run Discretize.java from any directory
+
+java -cp "/home/david/Dropbox/java/Discretization/src" Discretize "/home/david/Dropbox/datasets/essential genes prediction/test set/103 features data/BlindTestSet1_19Aug15_viable_genes_test_set2_no_missing_vals.arff" weka "/home/david/Dropbox/datasets/essential genes prediction/train set/103 features data/balanced1307_discretized_sig_level=0_95.arff" "/home/david/Dropbox/datasets/essential genes prediction/test set/103 features data/BlindTestSet1_19Aug15_viable_genes_test_set2_no_missing_vals_discretized_by_cuts_sig_level=0_95.arff"
+
+java -cp "/home/david/Dropbox/java/Discretization/src" Discretize "/home/david/Dropbox/datasets/essential genes prediction/unknown essentiality genes/103 features data/unknowngenes_no_missing_values.arff" weka "/home/david/Dropbox/datasets/essential genes prediction/train set/103 features data/balanced1307_discretized_sig_level=0_95.arff" "/home/david/Dropbox/datasets/essential genes prediction/unknown essentiality genes/103 features data/unknowngenes_discretized_by_cuts_sig_level=0_95.arff"
+
+java -cp "/home/david/Dropbox/java/Discretization/src" Discretize "/home/david/Dropbox/datasets/essential genes prediction/test set/93 features data/new_lethal_new_viable_all_features_1031.arff" weka "/home/david/Dropbox/datasets/essential genes prediction/train set/93 features data/new_lethal_new_viable_balanced_discretized_sig_level=0_99.arff" "/home/david/Dropbox/datasets/essential genes prediction/test set/93 features data/new_lethal_new_viable_genes_not_in_train_set_discretized_by_cuts_sig_level=0_99.arff"
+
+java -cp "/home/david/Dropbox/java/Discretization/src" Discretize "/home/david/Dropbox/datasets/essential genes prediction/test set/103 features data/viable_genes_test_set2.csv" csv "/home/david/Dropbox/datasets/essential genes prediction/train set/103 features data/balanced1307_discretized_sig_level=0_95.arff" "/home/david/Dropbox/datasets/essential genes prediction/test set/103 features data/viable_genes_test_set2_discretized_by_cuts_sig_level=0_95.arff"
+
