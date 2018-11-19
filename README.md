@@ -1,16 +1,23 @@
 # Rough-Set-Feature-Selection-Tools
-Rough set feature selection (RSFS) algorithms implemented in java. RSFS can be used to remove the irrelevant and redundant features from a training set before training machine learning classifiers such as neural networks and Bayesian network to improve the classification performance of the classifiers. RSFS works on discrete features only. To apply RSFS on continuous features, the continuous features must be discretized before running RSFS. Two popular discretization algorithms are the Entropy-based discretization method and the Chimerge discretization. The entroy-based discretization is available in the weka machine learning tool (https://www.cs.waikato.ac.nz/ml/weka/). A compiled java implementation of Chimerge is available under this repository.
+Rough set feature selection (RSFS) algorithms implemented in java. RSFS can be used to remove the irrelevant and redundant features from a training set before training machine learning classifiers such as neural networks and Bayesian network to improve the classification performance of the classifiers. RSFS works on discrete features only. To apply RSFS on continuous features, the continuous features must be discretized before running RSFS. Two popular discretization algorithms are the Entropy-based discretization method and the Chimerge discretization. The entroy-based discretization is available in the weka machine learning tool (https://www.cs.waikato.ac.nz/ml/weka/). A compiled java implementation of Chimerge is available under this repository. The following RSFS algorithms are implemented: 
 
-The following RSFS algorithms are implemented: 
-  genetic algorithm (GA_Reducts.java),
+  Genetic algorithm (GA_Reducts.java),
+  
   QuickReduct (QuickReduct.java),
-  random forward search (Random_RSFS.java),
-  random backward search (Random_RSFS.java),
-  random forward-backward search (Random_RSFS.java),
-  a multi-object genetic local search (Hybrid_NSGAII.java),
-  computation of degree of dependency (Gamma_and_Relative_Dependency.java) and
-  computation of relative dependency  (Gamma_and_Relative_Dependency.java).
-The genetic algorithm and the multi-objectve genetic local search calls the jmetal optimization library and the Weka machine learning tool (weka.jar version 3.6) to train classifiers and evaluate their performance on test sets.
+  
+  Random forward search (Random_RSFS.java),
+  
+  Random backward search (Random_RSFS.java),
+  
+  Random forward-backward search (Random_RSFS.java),
+  
+  Multi-object genetic local search (Hybrid_NSGAII.java),
+  
+  Computation of degree of dependency of a feature n a dataset (Gamma_and_Relative_Dependency.java),
+  
+  Computation of relative dependency of a feature in a dataset (Gamma_and_Relative_Dependency.java).
+  
+The genetic algorithm and the multi-objectve genetic local search calls the jmetal optimization library (http://jmetal.sourceforge.net/index.html) and the Weka machine learning tool (weka.jar version 3.6) (https://www.cs.waikato.ac.nz/ml/weka/) to train classifiers and evaluate their performance on test sets.
 
 References:
 
